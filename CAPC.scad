@@ -20,6 +20,13 @@
  * MA 02110-1301, USA.
  */
 
+// For an example uncomment the following line
+//CAPC (3.2, 1.6, 1.6, 0.4);
+
+// Material colors
+Leads = [0.77, 0.77, 0.8];
+Body = [0.99, 0.99, 0.5];
+
 module CAPC
 (
         package_length,
@@ -35,14 +42,19 @@ module CAPC
 {
         union()
         {
+// Body
+                color (Body)
                 cube([(package_length - (2 * lead_length)), package_width, package_height], center = true);
+// Right lead
+                color (Leads)
                 translate([(0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
+// Left lead.
+                color (Leads)
                 translate([(-0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
         }
 }
-
 
 /* EOF */
 
