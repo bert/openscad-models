@@ -20,8 +20,8 @@
  * MA 02110-1301, USA.
  */
 
-// For an example uncomment the following line
-//CAPC (3.2, 1.6, 1.6, 0.4);
+// For the CAPC3216X175 example uncomment the following line
+//CAPC (3.4, 1.75, 1.75, 0.8);
 
 // Material colors
 Leads = [0.77, 0.77, 0.8];
