@@ -20,9 +20,10 @@
  * MA 02110-1301, USA.
  */
 
+use <BOARD.scad>  /*! \todo Debugging */
 
-use <BOARD.scad>
-
+// For an example board uncomment the following line
+//EUROCARD (3, 2, 5.08);
 
 module EUROCARD
 (
@@ -30,28 +31,29 @@ module EUROCARD
         depth,
         horizontal_pitch
 )
+{
+
         U = 44.45; /* Unit. */
         D = 80; /* Minimum depth. */
         HP = 5.08; /* Horizontal Pitch. */
 
-        if (units == 3) width = 100;
-        else if (units == 6) width = 233.35;
-        else width = 1;
+        width = 1;
+        if (units == 3) {width = 100};
+        if (units == 6) {width = 233.35};
 
-        if (depth == 0) length = 80;
-        else if (depth == 1) length = 100;
-        else if (depth == 2) length = 160;
-        else if (depth == 3) length = 220;
-        else if (depth == 4) length = 280;
-        else if (depth == 5) length = 340;
-        else if (depth == 6) length = 400;
-        else length = 1;
+        length = 1;
+        if (depth == 0) {length = 80};
+        if (depth == 1) {length = 100};
+        if (depth == 2) {length = 160};
+        if (depth == 3) {length = 220};
+        if (depth == 4) {length = 280};
+        if (depth == 5) {length = 340};
+        if (depth == 6) {length = 400};
         /* Main PCB. */
         BOARD(length, width, 1.6);
         /*! \todo Connector to back plane. */
         /*! \todo Front (blind) plate (width in HP units). */
 }
-
 
 /* EOF */
 
