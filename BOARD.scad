@@ -20,6 +20,12 @@
  * MA 02110-1301, USA.
  */
 
+// For an example board uncomment the following line
+//BOARD (66.040, 22.4, 1.6);
+
+// Material colors
+FR4 = [0.1, 0.55, 0.1];
+
 module BOARD
 (
         length,
@@ -29,7 +35,9 @@ module BOARD
         thickness,
                 /*!< thickness of the printed circuit board.*/
 )
-        cube([(length, width, thickness], center = false);
+{
+        color (FR4)
+        cube([length, width, thickness], center = false);
 }
 
 
