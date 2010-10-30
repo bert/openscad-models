@@ -1,8 +1,7 @@
 /*!
  * \file COLORS.scad
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
- *
- * Definitions of colors and materials.
+ * \brief Definitions of colors and materials.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,6 +19,28 @@
  * 51 Franklin Street, Fifth Floor,
  * Boston,
  * MA 02110-1301, USA.
+ */
+
+/*!
+ * Displays the child elements using the specified RGB color + alpha
+ * value.\n
+ * This is only used for the OpenCSG and Thrown Together display modes.\n
+ * The alpha value will default to 1.0 (opaque) if not specified.\n
+ * \n
+ * Usage example:\n
+ * \code
+ * color([r, g, b, a]) { ... }
+ * \endcode
+ * 
+ * Note that the r, g, b, a values are limited to floating point values
+ * in the range { 0.0 ... 1.0 } rather than the more traditional
+ * integers { 0 ... 255 }.\n
+ * However you can specify the values as fractions, e.g. for R,G,B
+ * integers in {0 ... 255} you can use:\n
+ * \code
+ * color([ R/255, G/255, B/255 ]) { ... }
+ * \endcode
+ * 
  */
 
 /* Color bands on resistors. */
