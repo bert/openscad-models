@@ -1,0 +1,5 @@
+My coding style conventions:
+
+Names of modules in separate files [use, include] are in upper-case (like a macro).
+
+Names of modules within the same file are in lower-case.
