@@ -22,7 +22,7 @@
  * MA 02110-1301, USA.
  */
 
-// Color bands on resistors.
+/* Color bands on resistors. */
 BLACK = [0, 0, 0];
 BROWN = [189/255, 94/255, 0];
 RED = [255/255, 0, 0];
@@ -36,17 +36,17 @@ WHITE = [255/255, 255/255, 255/255];
 GOLD = [0.88, 0.78, 0.5]; // Color needs further tweaking.
 SILVER = [0.65, 0.67, 0.72]; // Color needs further tweaking.
 
-// Colors of board materials.
+/* Colors of board materials. */
 FIBER_BOARD = [0.7, 0.67, 0.6];
 FR4 = [0.1, 0.55, 0.1];
 
-// Colors of components, or parts thereof.
+/* Colors of components, or parts thereof. */
 LEADS = [0.77, 0.77, 0.8];
 CAPC_BODY = [0.99, 0.99, 0.5];
 RES_BODY = [0.3, 0.3, 0.3];
 RESC_BODY = [0.3, 0.3, 0.3];
 
-// Miscellaneous colors which might be useful.
+/* Miscellaneous colors which might be useful. */
 OAK = [0.65, 0.5, 0.4];
 PINE = [0.85, 0.7, 0.45];
 BIRCH = [0.9, 0.8, 0.6];
@@ -59,5 +59,3 @@ BRASS = [0.88, 0.78, 0.5];
 TRANSPARENT = [1, 1, 1, 0.2];
 
 /* EOF */
-
-
