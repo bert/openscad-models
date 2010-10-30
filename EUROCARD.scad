@@ -2,6 +2,8 @@
  * \file EUROCARD.scad
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
+ * Function to create a 3D model of a FR4 PCB Euroboard.
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
