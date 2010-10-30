@@ -30,12 +30,12 @@ include <COLORS.scad>
 module RESC
 (
         package_length,
-                /*!< body length of the chip capacitor,
+                /*!< body length of the chip resistor,
                  * including the leads at the ends. */
         package_width,
-                /*!< body width of the chip capacitor. */
+                /*!< body width of the chip resistor. */
         package_height,
-                /*!< body height of the chip capacitor.*/
+                /*!< body height of the chip resistor.*/
         lead_length
                 /*!< length of the leads.*/
 )
