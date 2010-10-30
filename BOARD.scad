@@ -22,11 +22,10 @@
  * MA 02110-1301, USA.
  */
 
+include <COLORS.scad>
+
 // For an example board uncomment the following line
 //BOARD (66.040, 22.4, 1.6);
-
-// Material colors
-FR4 = [0.1, 0.55, 0.1];
 
 module BOARD
 (

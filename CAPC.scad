@@ -22,12 +22,10 @@
  * MA 02110-1301, USA.
  */
 
+include <COLORS.scad>
+
 // For the CAPC3216X175 example uncomment the following line
 //CAPC (3.4, 1.75, 1.75, 0.8);
-
-// Material colors
-Leads = [0.77, 0.77, 0.8];
-Body = [0.99, 0.99, 0.5];
 
 module CAPC
 (
@@ -45,14 +43,14 @@ module CAPC
         union()
         {
 // Body
-                color (Body)
+                color (CAPC_BODY)
                 cube([(package_length - (2 * lead_length)), package_width, package_height], center = true);
 // Right lead
-                color (Leads)
+                color (LEADS)
                 translate([(0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
 // Left lead.
-                color (Leads)
+                color (LEADS)
                 translate([(-0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
         }
