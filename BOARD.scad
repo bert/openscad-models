@@ -1,8 +1,9 @@
 /*!
  * \file BOARD.scad
+ * 
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
- *
- * Function to create a 3D model of a FR4 PCB board.
+ * 
+ * \brief Function to create a 3D model of a FR4 PCB board.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,22 +24,25 @@
  */
 
 include <COLORS.scad>
+include <CONST.scad>
 
 // For an example board uncomment the following line
 //BOARD (66.040, 22.4, 1.6);
 
 module BOARD
 (
-        length,
-                /*!< length of the printed circuit board. */
-        width,
-                /*!< width of the printed circuit board. */
-        thickness,
-                /*!< thickness of the printed circuit board.*/
+  length,
+    /*!< length of the printed circuit board. */
+  width,
+    /*!< width of the printed circuit board. */
+  thickness,
+    /*!< thickness of the printed circuit board.*/
 )
 {
-        color (FR4)
-        cube([length, width, thickness], center = false);
+  color (FR4)
+  {
+    cube([length, width, thickness], center = false);
+  }
 }
 
 

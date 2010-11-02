@@ -1,8 +1,10 @@
 /*!
  * \file RESC.scad
+ * 
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
- *
- * Function to create a 3D model of a SMT Chip Resistor package (\c RESC).
+ * 
+ * \brief Function to create a 3D model of a SMT Chip Resistor package
+ * (\c RESC).
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +25,7 @@
  */
 
 include <COLORS.scad>
+include <CONST.scad>
 
 // For the RESC3216X140 example uncomment the following line
 //RESC (3.4, 1.75, 1.40, 0.8);
