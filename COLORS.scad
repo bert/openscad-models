@@ -1,6 +1,8 @@
 /*!
  * \file COLORS.scad
+ *
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ *
  * \brief Definitions of colors and materials.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -18,10 +20,9 @@
  * the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor,
  * Boston,
- * MA 02110-1301, USA.
- */
-
-/*!
+ * MA 02110-1301, USA.\n
+ * <hr>
+ * 
  * Displays the child elements using the specified RGB color + alpha
  * value.\n
  * This is only used for the OpenCSG and Thrown Together display modes.\n
