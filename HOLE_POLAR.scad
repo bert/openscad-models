@@ -40,7 +40,7 @@ module HOLE_POLAR
   {
     translate ([0, distance, 0])
     {
-      cylinder (r = (diameter / 2), h = depth, center = true);
+      cylinder (r = (diameter / 2), h = depth, center = false);
     }
   }
 }
