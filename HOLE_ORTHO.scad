@@ -26,19 +26,19 @@
 
 module HOLE_ORTHO
 (
-  X,
+  x,
     /*!< X-coordinate of the center of the hole. */
-  Y,
+  y,
     /*!< Y-coordinate of the center of the hole. */
-  DIAMETER,
+  diameter,
     /*!< Diameter of the hole. */
-  DEPTH
+  depth
     /*!< Depth of the hole. */
 )
 {
-  translate([X, Y, 0])
+  translate([x, y, 0])
   {
-    cylinder(r = DIAMETER, h = DEPTH, center = true);
+    cylinder(r = diameter, h = depth, center = true);
   }
 }
 
