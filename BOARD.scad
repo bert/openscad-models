@@ -26,8 +26,9 @@
 include <COLORS.scad>
 include <CONST.scad>
 
-// For an example board uncomment the following line
+// For an example board uncomment one of the following lines
 //BOARD (66.040, 22.4, 1.6);
+//BOARD (160.0, 100.0, 1.6);
 
 module BOARD
 (
@@ -44,7 +45,6 @@ module BOARD
     cube([length, width, thickness], center = false);
   }
 }
-
 
 /* EOF */
 
