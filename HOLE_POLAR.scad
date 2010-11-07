@@ -26,21 +26,21 @@
 
 module HOLE_POLAR
 (
-  DISTANCE,
+  distance,
     /*!< Radial distance from the origin. */
-  ROTATION,
+  rotation,
     /*!< Angle with the current X-axis. */
-  DIAMETER,
+  diameter,
     /*!< Diameter of the hole. */
-  DEPTH
+  depth
     /*!< Depth of the hole. */
 )
 {
-  rotate (a = ROTATION, v = [1, 0, 0])
+  rotate (a = rotation, v = [1, 0, 0])
   {
-    translate ([0, DISTANCE, 0])
+    translate ([0, distance, 0])
     {
-      cylinder (r = DIAMETER, h = DEPTH, center = true);
+      cylinder (r = (diameter / 2), h = depth, center = true);
     }
   }
 }
