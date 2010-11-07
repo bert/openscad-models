@@ -38,7 +38,7 @@ module HOLE_ORTHO
 {
   translate([x, y, 0])
   {
-    cylinder(r = (diameter / 2), h = depth, center = true);
+    cylinder(r = (diameter / 2), h = depth, center = false);
   }
 }
 
