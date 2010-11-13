@@ -45,18 +45,18 @@
  */
 
 /* Color bands on resistors. */
-BLACK = [0, 0, 0];
-BROWN = [189/255, 94/255, 0];
-RED = [255/255, 0, 0];
-ORANGE = [255/255, 127/255, 0];
-YELLOW = [255/255, 255/255, 0.0];
-GREEN = [0, 255/255, 0];
-BLUE = [0, 0, 255/255];
-VIOLET = [255/255, 0, 255/255];
-GREY = [127/255, 127/255, 127/255];
-WHITE = [255/255, 255/255, 255/255];
-GOLD = [0.88, 0.78, 0.5]; // Color needs further tweaking.
-SILVER = [0.65, 0.67, 0.72]; // Color needs further tweaking.
+RES_BLACK = [0, 0, 0];
+RES_BROWN = [189/255, 94/255, 0];
+RES_RED = [255/255, 0, 0];
+RES_ORANGE = [255/255, 127/255, 0];
+RES_YELLOW = [255/255, 255/255, 0.0];
+RES_GREEN = [0, 255/255, 0];
+RES_BLUE = [0, 0, 255/255];
+RES_VIOLET = [255/255, 0, 255/255];
+RES_GREY = [127/255, 127/255, 127/255];
+RES_WHITE = [255/255, 255/255, 255/255];
+RES_GOLD = [0.88, 0.78, 0.5]; // Color needs further tweaking.
+RES_SILVER = [0.65, 0.67, 0.72]; // Color needs further tweaking.
 
 /* Colors of board materials. */
 FIBER_BOARD = [0.7, 0.67, 0.6];
