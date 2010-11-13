@@ -55,11 +55,11 @@
 
 $fa = 1;
     /*!< Minimum angle for a fragment. */
-$fs = 0.001;
+$fs = 0.1;
     /*!< Minimum size for a fragment. */
-$fn = 360;
+$fn = 36;
     /*!< Number of fragments used for a full circle. */
-$t = 0.001;
+$t = 0.01;
     /*!< Time slice.*/
 
 /* Constants for math. */
