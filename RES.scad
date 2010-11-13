@@ -29,7 +29,7 @@ include <CONST.scad>
 //use <FUNCTIONS.scad>
 
 // For a RES1016-635X229 example uncomment the following line
-RES (20.16, 6.35, 2.29, 0.8);
+//RES (20.16, 6.35, 2.29, 0.8);
 
 module RES
 (
@@ -44,13 +44,7 @@ module RES
     /*!< diameter of the leads.*/
 )
 {
-  color (FR4)
-  {
-    cube ([30.0, 20.0, 0.01], center = true);
-  }
-
   bend_radius = 2 * lead_diameter;
-
   union()
   {
     /* Body. */
@@ -92,36 +86,33 @@ module RES
       {
         difference ()
         {
-          difference ()
+          translate ([bend_radius, 0, 0])
           {
-            translate ([bend_radius, 0, 0])
+            rotate_extrude (convexity = 10)
             {
-              rotate_extrude (convexity = 10)
-              {
-                circle (r = lead_diameter);
-              }
+              circle (r = lead_diameter);
             }
-            cube 
-            (
-              [4 * lead_diameter, 1 * lead_diameter, 1 * lead_diameter],
-              center = false
-            );
-          } /* End of difference. */
-          translate ([(-4 * lead_diameter), (-1 * lead_diameter), 0])
-          {
-            cube
-            (
-              [4*lead_diameter, 4*lead_diameter, 2*lead_diameter],
-              center = false
-            );
           }
+          cube 
+          (
+            [4 * lead_diameter, 1 * lead_diameter, 1 * lead_diameter],
+            center = false
+          );
+        }
+        translate ([(-4 * lead_diameter), (-1 * lead_diameter), 0])
+        {
+          cube
+          (
+            [4*lead_diameter, 4*lead_diameter, 2*lead_diameter],
+            center = false
+          );
         } /* End of difference. */
       }
+    }
     /* Left lead. */
     
     /* Right lead bend. */
     
-    }
   } /* End of union. */
 }
 
