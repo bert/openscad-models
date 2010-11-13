@@ -59,7 +59,7 @@ module BGA
   /* Body. */
   color (BGA_BODY)
   {
-    translate([(-package_body_length / 2), (-package_body_width / 2), ball_diameter])
+    translate ([(-package_body_length / 2), (-package_body_width / 2), ball_diameter])
     {
       cube ([package_body_length, package_body_width, package_body_height], center = false);
     }
@@ -71,8 +71,7 @@ module BGA
     {
       for (j = [1 : number_of_columns])
       {
-        translate ([((((-number_of_columns - 1) / 2) + j) * pitch),
-        ((((-number_of_rows - 1) / 2) + i) * pitch), (0.5 * ball_diameter)])
+        translate ([((((-number_of_columns - 1) / 2) + j) * pitch), ((((-number_of_rows - 1) / 2) + i) * pitch), (0.5 * ball_diameter)])
         {
           sphere (r = ball_diameter / 2);
         }
