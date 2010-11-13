@@ -76,4 +76,10 @@ MIL = INCH / 1000;
 MIL100 = MIL / 100;
     /*!< mil/100 as used in gEDA/PCB. */
 
+/* Some Printed Circuit Board related defaults. */
+DEFAULT_BOARD_THICKNESS = 1.6;
+    /*!< Default printed circuit board thickness = 1.6 mm. */
+DEFAULT_COPPER_THICKNESS = 0.035;
+    /*!< Default copper trace thickness on a pcb = 0.0035 mm = 35 um. */
+
 /* EOF */
