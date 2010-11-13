@@ -26,13 +26,14 @@
 
 include <COLORS.scad>
 include <CONST.scad>
-//use <FUNCTIONS.scad>
 
 // For a RES1016-635X229 example uncomment the following line
-//RES (20.16, 6.35, 2.29, 0.8);
+//RES (1000, 20.16, 6.35, 2.29, 0.8);
 
 module RES
 (
+  resistance_value,
+    /*!< Resistance value in Ohms. */
   pitch_x,
     /*!< pitch in X-direction. */
   package_length,
@@ -80,7 +81,7 @@ module RES
       }
     }
     /* Right lead bend. */
-    color (RED)
+    color (RES_RED)
     {
       translate ([0, 0, 0])
       {
