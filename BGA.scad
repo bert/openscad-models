@@ -3,7 +3,7 @@
  * 
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
- * \brief Function to create a 3D model of a SMT Baal Gate Array package
+ * \brief Function to create a 3D model of a SMT Ball Gate Array package
  * (\c BGA).
  *
  * This program is free software; you can redistribute it and/or modify
