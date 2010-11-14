@@ -24,9 +24,11 @@
  * MA 02110-1301, USA.
  */
 
+include <BGA.scad>
 include <CAPC.scad>
 include <CAPPR.scad>
 include <MTG_HOLE.scad>
+include <PGA.scad>
 include <RES.scad>
 include <RESC.scad>
 
