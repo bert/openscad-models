@@ -24,6 +24,10 @@
  * <hr>
  */
 
+
+include <COLORS.scad>
+
+
 module HOLE_ORTHO
 (
   x,
