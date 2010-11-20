@@ -59,8 +59,12 @@ RES_GOLD = [0.88, 0.78, 0.5]; // Color needs further tweaking.
 RES_SILVER = [0.65, 0.67, 0.72]; // Color needs further tweaking.
 
 /* Colors of board materials. */
-FIBER_BOARD = [0.7, 0.67, 0.6];
-FR4 = [0.1, 0.55, 0.1];
+FR4 = [0.7, 0.67, 0.6, 0.95];
+DRILL_HOLE = [1.0, 1.0, 1.0];
+COPPER = [0.88, 0.78, 0.5]; // Color needs further tweaking.
+SOLDER_RESIST = [0.1, 0.55, 0.1, 0.2];
+SILK_BLACK = [0, 0, 0];
+SILK_WHITE = [255/255, 255/255, 255/255];
 
 /* Colors of components, or parts thereof. */
 LEADS = [0.77, 0.77, 0.8];
