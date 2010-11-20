@@ -44,6 +44,7 @@ module BOARD
   {
     cube([length, width, thickness], center = false);
   }
+  /*! \todo We need to apply solder resist on both sides. */
 }
 
 /* EOF */
