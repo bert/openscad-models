@@ -1,8 +1,6 @@
-My openscad stuff
+This directory contains files for modelling pcbs with OpenSCAD by means of the pcb-openscad exporter.
 
-WARNING: These files are used for getting familiar with openscad and might contain bugs, YMMV :-)
-
-The Openscad webpage can be found here:
+The OpenSCAD webpage can be found here:
 
 http://openscad.org/
 
