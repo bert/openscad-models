@@ -24,7 +24,7 @@
  * <hr>
  */
 
-include <HOLE_ORTHO.scad>
+include <COLORS.scad>
 
 module MTG_HOLE
 (
@@ -38,7 +38,12 @@ module MTG_HOLE
     /*!< Depth of the hole. */
 )
 {
-  HOLE_ORTHO (x, y, diameter, depth);
+  translate([x, y, 0])
+  {
+    color (DRILL_HOLE)
+    cylinder(r = (diameter / 2), h = depth, center = false);
+  }
 }
 
 /* EOF */
+
