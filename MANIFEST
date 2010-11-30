@@ -1,0 +1,18 @@
+Filename		description
+-------------------------------------------------------------------------------
+MANIFEST		this file.
+BGA.scad		parametric 3D model definition of a Ball Gate Array.
+BOARD.scad		parametric 3D model definition of a pcb board.
+CAPC.scad		parametric 3D model definition of a Chip Capacitor.
+CAPPR.scad		parametric 3D model definition of a Polarized Radial throuh hole Capacitor.
+COLORS.scad		color definitions.
+CONST.scad		constants.
+INSERT_PART_MODEL.scad	function used for inserting parts.
+MTG_HOLE.scad		parametric 3D model definition of a mounting hole (unplated).
+PACKAGES.scad		container file used for including all known package types.
+PGA.scad		parametric 3D model definition of a Pin Gate Array.
+PIN_HOLE.scad		parametric 3D model definition of a pin hole for through hole components (plated).
+README			here you can find information you might find usefull.
+RES.scad		parametric 3D model definition of a through hole Resistor.
+RESC.scad		parametric 3D model definition of a Chip Resistor.
+VIA_HOLE.scad		parametric 3D model definition of a via hole.
