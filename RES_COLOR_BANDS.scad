@@ -74,6 +74,90 @@ module RES_COLOR_BANDS (value, tolerance)
         band_4 = TRANSPARENT;
     }
     /* Color bands for E12 resistor series values. */
+    else if (value = "0.1")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLACK;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.12")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_RED;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.15")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_GREEN;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.18")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_GREY;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.22")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_RED;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.27")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_VIOLET;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.33")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_ORANGE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.39")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_WHITE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.47")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_VIOLET;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.56")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BLUE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.68")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_VIOLET;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.82")
+    {
+        band_1 = RES_GREY;
+        band_2 = RES_RED;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
     else if (value = "1.0")
     {
         band_1 = RES_BROWN;
