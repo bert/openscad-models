@@ -753,6 +753,680 @@ module RES_COLOR_BANDS (value, tolerance)
         band_3 = RES_BLUE;
         band_4 = TRANSPARENT;
     }
+    /* Color bands for E24 resistor series values (additional to E12
+     * series, so intermediate values only). */
+    else if (value = "0.11")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.13")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.16")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.20")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.24")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.30")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.36")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.43")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.51")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.62")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.75")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "0.91")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_SILVER;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1.1")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1.3")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1.6")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2.0")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2.4")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3.0")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3.6")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "4.3")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "5.1")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "6.2")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "7.5")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "9.1")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_GOLD;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "11")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "13")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "16")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "20")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "24")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "30")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "36")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "43")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "51")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "62")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "75")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "91")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_BLACK;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "110")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "130")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "160")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "200")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "240")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "300")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "360")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "430")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "510")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "620")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "750")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "910")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_BROWN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1k1")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1k3")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1k6")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2k")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2k4")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3k")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3k6")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "4k3")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "5k1")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "6k2")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "7k5")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "9k1")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_RED;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "11k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "13k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "16k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "20k")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "24k")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "30k")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "36k")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "43k")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "51k")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "62k")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "75k")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "91k")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_ORANGE;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "110k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "130k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "160k")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "200k")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "240k")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "300k")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "360k")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "430k")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "510k")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "620k")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "750k")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "910k")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_YELLOW;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1M1")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BROWN;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1M3")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_ORANGE;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "1M6")
+    {
+        band_1 = RES_BROWN;
+        band_2 = RES_BLUE;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2M")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_BLACK;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "2M4")
+    {
+        band_1 = RES_RED;
+        band_2 = RES_YELLOW;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3M")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLACK;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "3M6")
+    {
+        band_1 = RES_ORANGE;
+        band_2 = RES_BLUE;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "4M3")
+    {
+        band_1 = RES_YELLOW;
+        band_2 = RES_ORANGE;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "5M1")
+    {
+        band_1 = RES_GREEN;
+        band_2 = RES_BROWN;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "6M2")
+    {
+        band_1 = RES_BLUE;
+        band_2 = RES_RED;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "7M5")
+    {
+        band_1 = RES_VIOLET;
+        band_2 = RES_GREEN;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
+    else if (value = "9M1")
+    {
+        band_1 = RES_WHITE;
+        band_2 = RES_BROWN;
+        band_3 = RES_GREEN;
+        band_4 = TRANSPARENT;
+    }
 }
 
 
