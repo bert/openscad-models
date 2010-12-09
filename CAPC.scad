@@ -69,6 +69,73 @@ module CAPC
   }
 }
 
+module CAPC_LOOKUP (modelname)
+{
+  if (modelname = "CAPC0603X33N")
+  {
+    CAPC (0.63, 0.30, 0.33, 0.20);
+  }
+  else if (modelname = "CAPC0816X61N")
+  {
+    CAPC (0.96, 1.75, 0.61, 0.38);
+  }
+  else if (modelname = "CAPC1005X55N")
+  {
+    CAPC (1.05, 0.55, 0.55, 0.30);
+  }
+  else if (modelname = "CAPC1005X56N")
+  {
+    CAPC (1.10, 0.60, 0.56, 0.25);
+  }
+  else if (modelname = "CAPC1005X60N")
+  {
+    CAPC (1.10, 0.60, 0.60, 0.25);
+  }
+  else if (modelname = "CAPC3216X175N")
+  {
+    CAPC (3.40, 1.80, 1.75, 0.75);
+  }
+  else if ((modelname = "CAPC3216L")
+        || (modelname = "CAPC3216M")
+        || (modelname = "CAPC3216N"))
+  {
+    CAPC (3.4, 1.80, 1.75, 0.75);
+  }
+  else echo ("Unable to find data for the ", modelname, " package.");
+}
+
+module CAPC_PLACE
+(
+  modelname,
+  Tx,
+  Ty,
+  Rz,
+  side,
+  value
+)
+{
+  if (side = "top")
+  {
+    translate ([Tx, Ty, top])
+    {
+      rotate ([0, 0, Rz])
+      {
+        CAPC_LOOKUP (modelname);
+      }
+    }
+  }
+  if (side = "bottom")
+  {
+    translate ([Tx, Ty, bottom])
+    {
+      rotate ([0, 180, Rz])
+      {
+        CAPC_LOOKUP (modelname);
+      }
+    }
+  }
+}
+
 /* EOF */
 
 
