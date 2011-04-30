@@ -1,18 +1,39 @@
-Filename		description
+Filename		Description
 -------------------------------------------------------------------------------
-MANIFEST		this file.
-BGA.scad		parametric 3D model definition of a Ball Gate Array.
-BOARD.scad		parametric 3D model definition of a pcb board.
-CAPC.scad		parametric 3D model definition of a Chip Capacitor.
-CAPPR.scad		parametric 3D model definition of a Polarized Radial throuh hole Capacitor.
-COLORS.scad		color definitions.
-CONST.scad		constants.
-INSERT_PART_MODEL.scad	function used for inserting parts.
-MTG_HOLE.scad		parametric 3D model definition of a mounting hole (unplated).
-PACKAGES.scad		container file used for including all known package types.
-PGA.scad		parametric 3D model definition of a Pin Gate Array.
-PIN_HOLE.scad		parametric 3D model definition of a pin hole for through hole components (plated).
-README			here you can find information you might find usefull.
-RES.scad		parametric 3D model definition of a through hole Resistor.
-RESC.scad		parametric 3D model definition of a Chip Resistor.
-VIA_HOLE.scad		parametric 3D model definition of a via hole.
+README			Here you can find information you might find usefull.
+MANIFEST		This file.
+HACKING                 Howto read and invoke OpenSCAD code.
+
+BGA.scad		Function to create a 3D model of a SMT Ball Gate Array
+                        package (BGA).
+BOARD.scad		Function to create a 3D model of a FR4 PCB board.
+CAPC.scad		Function to create a 3D model of a SMT Chip Capacitor
+                        package (CAPC).
+CAPPR.scad		Function to create a 3D model of a TH Radial Polarized
+                        Capacitor package (CAPPR).
+COLORS.scad		Definitions of colors and materials.
+CONST.scad		Constants for math, rendering and other related stuff.
+EUROCARD.scad           Function to create a 3D model of a FR4 PCB with
+                        Eurocard form factors.
+HOLE_ORTHO.scad         Functions for a hole (orthogonal coordinates).
+HOLE_POLAR.scad         Functions for a hole (polar coordinates).
+INSERT_PART_MODEL.scad	.
+MTG_HOLE.scad		Functions for a mounting hole (unplated).
+PACKAGES.scad		Container file to include all sorts of packages with a
+                        single include statement.
+PGA.scad		Function to create a 3D model of a Through Hole Pin
+                        Gate Array package (PGA).
+PIN_HOLE.scad		Functions for a pcb pin hole (plated).
+RES.scad		Function to create a 3D model of a Through Hole
+                        Resistor package (RES).
+RESAD.scad              Function to create a 3D model of a Through Hole
+                        Resistor Aial Diameter package (RESAD).
+RESAR.scad              Function to create a 3D model of a Through Hole
+                        Resistor Axial Rectangular package (RESAR).
+RESC.scad		Function to create a 3D model of a SMT Chip Resistor
+                        package (RESC).
+VIA_HOLE.scad		Functions for a via pin hole (plated).
+WIRE_BEND.scad          Functions for a bend in a wire.
+
+# EOF #
+
