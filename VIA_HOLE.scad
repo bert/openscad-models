@@ -3,7 +3,7 @@
  *
  * \author Copyright (C) 2010, 2011 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
- * \brief Functions for a via pin hole (plated)
+ * \brief Functions for a via pin hole (plated).
  *
  * Invoke with orthogonal coordinates.
  *
