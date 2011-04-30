@@ -1,9 +1,11 @@
 /*!
  * \file MTG_HOLE.scad
  *
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010, 2011 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
- * \brief Functions for a mounting hole.
+ * \brief Functions for a mounting hole (unplated).
+ *
+ * Invoke with orthogonal coordinates.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

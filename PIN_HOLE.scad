@@ -3,7 +3,9 @@
  *
  * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
- * \brief Functions for a pcb pin hole (orthogonal coordinates).
+ * \brief Functions for a pcb pin hole (plated).
+ *
+ * Invoke with orthogonal coordinates.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
