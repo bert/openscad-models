@@ -82,4 +82,63 @@ DEFAULT_BOARD_THICKNESS = 1.6;
 DEFAULT_COPPER_THICKNESS = 0.035;
     /*!< Default copper trace thickness on a pcb = 0.0035 mm = 35 um. */
 
+/* Some math constants. */
+M_E = 2.71828182845904523536;
+        /*!< The base of natural logarithms. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_LOG2E = 1.44269504088896340736;
+        /*!< The logarithm to base 2 of M_E. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_LOG10E = 0.434294481903251827651;
+        /*!< The logarithm to base 10 of M_E. \n
+         *From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_LN2 = 0.693147180559945309417;
+        /*!< The natural logarithm of 2. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_LN10 = 2.30258509299404568402;
+        /*!< The natural logarithm of 10. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_PI = 3.14159265358979323846;
+        /*!< Pi, the ratio of a circle's circumference to its diameter. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_PI_2 = 1.57079632679489661923;
+        /*!< Pi divided by two. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_PI_4 = 0.785398163397448309616;
+        /*!< Pi divided by four. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_1_PI = 0.318309886183790671538;
+        /*!< The reciprocal of pi (1/pi). \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_2_PI = 0.636619772367581343076;
+        /*!< Two times the reciprocal of pi. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_1_SQRTPI = 0.564189583547756286948;
+        /*!< The reciprocal of the square root of pi. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_2_SQRTPI = 1.12837916709551257390;
+        /*!< Two times the reciprocal of the square root of pi. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_SQRT2 = 1.41421356237309504880;
+        /*!< The square root of two. \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+M_SQRT1_2 = 0.707106781186547524401;
+        /*!< The reciprocal of the square root of two
+         * (also the square root of 1/2). \n
+         * From math.h. \n
+         * Constant rounded for 21 decimals. */
+
 /* EOF */
