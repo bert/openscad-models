@@ -1,7 +1,7 @@
 /*!
  * \file COLORS.scad
  *
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief Definitions of colors and materials.
  *
@@ -55,13 +55,15 @@ RES_BLUE = [0, 0, 255/255];
 RES_VIOLET = [255/255, 0, 255/255];
 RES_GREY = [127/255, 127/255, 127/255];
 RES_WHITE = [255/255, 255/255, 255/255];
-RES_GOLD = [0.88, 0.78, 0.5]; // Color needs further tweaking.
-RES_SILVER = [0.65, 0.67, 0.72]; // Color needs further tweaking.
+RES_GOLD = [0.88, 0.78, 0.5]; /* Color needs further tweaking. */
+RES_SILVER = [0.65, 0.67, 0.72]; /* Color needs further tweaking. */
 
 /* Colors of board materials. */
 FR4 = [0.7, 0.67, 0.6, 0.95];
 DRILL_HOLE = [1.0, 1.0, 1.0];
-COPPER = [0.88, 0.78, 0.5]; // Color needs further tweaking.
+COPPER = [0.88, 0.78, 0.5]; /* Color needs further tweaking. */
+HASL = [0.77, 0.77, 0.8]; /* Color needs further tweaking. */
+GOLD = [0.88, 0.78, 0.5]; /* Color needs further tweaking. */
 SOLDER_RESIST = [0.1, 0.55, 0.1, 0.2];
 SILK_BLACK = [0, 0, 0];
 SILK_WHITE = [255/255, 255/255, 255/255];
@@ -72,6 +74,7 @@ BGA_BODY = [0.2, 0.2, 0.2];
 CAPC_BODY = [0.99, 0.99, 0.5];
 CAPA_BODY = [0.0, 0.0, 1.0];
 CAPPR_BODY = [0.2, 0.2, 0.2];
+HDR_BODY = [0.0, 0.0, 0.0];
 PGA_BODY = [0.2, 0.2, 0.2];
 RES_BODY = [0.3, 0.3, 0.3];
 RESC_BODY = [0.3, 0.3, 0.3];

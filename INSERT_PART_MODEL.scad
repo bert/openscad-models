@@ -1,7 +1,7 @@
 /*!
  * \file INSERT.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief .
  *
@@ -89,13 +89,18 @@ function INSERT_PART_MODEL
       }
     }
   }
-  /* Package types according a well known naming convention. */
+  /* Package types according to a well known naming convention. */
   else if (package_type == "CAPC" && !CAPC_SCAD_INCLUDED)
   {
-    /* Package type with a well known naming convention. */
     include <CAPC.scad>
     CAPC_SCAD_INCLUDED = 1;
     CAPC_PLACE (modelname, Tx, Ty, Rz, side, value);
+  }
+  else if (package_type == "HDR" && !HDR_SCAD_INCLUDED)
+  {
+    include <HDR.scad>
+    HDR_SCAD_INCLUDED = 1;
+    HDR_PLACE (modelname, Tx, Ty, Rz, side, value);
   }
   else if (package_type == "RESC" && !RESC_SCAD_INCLUDED)
   {
@@ -103,7 +108,6 @@ function INSERT_PART_MODEL
     RESC_SCAD_INCLUDED = 1;
     RESC_PLACE (modelname, Tx, Ty, Rz, side, value);
   }
+} /* End of function. */
 
 /* EOF */
-
-

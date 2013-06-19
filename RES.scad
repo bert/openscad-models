@@ -1,7 +1,7 @@
 /*!
  * \file RES.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a Through Hole Resistor
  * package (\c RES).
@@ -27,8 +27,8 @@
 include <COLORS.scad>
 include <CONST.scad>
 
-// For a RES1016-635X229 example uncomment the following line
-//RES (1000, 20.16, 6.35, 2.29, 0.8);
+// For a 1000 Ohm RES1016-635X229 example uncomment the following line:
+//RES (1000, 10.16, 6.35, 2.29, 0.8);
 
 module RES
 (
@@ -118,5 +118,3 @@ module RES
 }
 
 /* EOF */
-
-

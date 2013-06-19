@@ -1,7 +1,7 @@
 /*!
  * \file PACKAGES.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Container file to include all sorts of packages with a single
  * include statement.
@@ -27,11 +27,10 @@
 include <BGA.scad>
 include <CAPC.scad>
 include <CAPPR.scad>
+include <HDR.scad>
 include <MTG_HOLE.scad>
 include <PGA.scad>
 include <RES.scad>
 include <RESC.scad>
 
 /* EOF */
-
-
