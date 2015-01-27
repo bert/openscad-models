@@ -71,7 +71,6 @@ SILK_WHITE = [255/255, 255/255, 255/255];
 /* Colors of components, or parts thereof. */
 LEADS = [0.77, 0.77, 0.8];
 CAPA_BODY = [0.0, 0.0, 1.0];
-HDR_BODY = [0.0, 0.0, 0.0];
 RES_BODY = [0.3, 0.3, 0.3];
 RESC_BODY = [0.3, 0.3, 0.3];
 
