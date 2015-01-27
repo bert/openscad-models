@@ -1,7 +1,7 @@
 /*!
  * \file CAPPR.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a TH Radial Polarized Capacitor package
  * (\c CAPPR).
@@ -27,6 +27,8 @@
 include <COLORS.scad>
 include <CONST.scad>
 
+COLOR_CAPPR_BODY = [0.2, 0.2, 0.2];
+
 // For an example uncomment the following line
 //CAPPR (5.08, 11.0, 16.00, 0.8, 2.1);
 
@@ -47,7 +49,7 @@ module CAPPR
   union()
   {
     /* Body. */
-    color (CAPPR_BODY)
+    color (COLOR_CAPPR_BODY)
     {
       cylinder (r = package_diameter / 2, h = package_height, center = false);
     }

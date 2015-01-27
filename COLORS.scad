@@ -1,7 +1,7 @@
 /*!
  * \file COLORS.scad
  *
- * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief Definitions of colors and materials.
  *
@@ -71,7 +71,6 @@ SILK_WHITE = [255/255, 255/255, 255/255];
 /* Colors of components, or parts thereof. */
 LEADS = [0.77, 0.77, 0.8];
 CAPA_BODY = [0.0, 0.0, 1.0];
-CAPPR_BODY = [0.2, 0.2, 0.2];
 HDR_BODY = [0.0, 0.0, 0.0];
 RES_BODY = [0.3, 0.3, 0.3];
 RESC_BODY = [0.3, 0.3, 0.3];
