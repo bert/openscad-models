@@ -1,7 +1,7 @@
 /*!
  * \file PGA.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a Through Hole Pin Gate Array package
  * (\c PGA).
@@ -27,6 +27,8 @@
 include <COLORS.scad>
 include <CONST.scad>
 
+COLOR_PGA_BODY = [0.2, 0.2, 0.2];
+
 /* For the PGA1284C100P36X36_3750X3750X400 example uncomment the following line.
  * The generation af vertices for all pins my take some time and memory.
  * Please adjust your settings to something like:
@@ -34,14 +36,14 @@ include <CONST.scad>
  * $fs = 0.1;
  * $fn = 36;
  */
-//PGA (1284, 1.00, 36, 36, 37.50, 37.50, 4.00, 0.45, 8.0);
+//PGA (144, 1.00, 12, 12, 14.00, 14.00, 2.00, 0.45, 8.0);
 
 module PGA
 (
   number_of_leads,
   /*!< number of leads. */
   pitch,
-  /*!< pitch of the balls. */
+  /*!< pitch of the pins. */
   number_of_columns,
   /*!< number of columns. */
   number_of_rows,
@@ -59,14 +61,14 @@ module PGA
 )
 {
   /* Body. */
-  color (PGA_BODY)
+  color (COLOR_PGA_BODY)
   {
     translate ([(-package_body_length / 2), (-package_body_width / 2), 0])
     {
       cube ([package_body_length, package_body_width, package_body_height], center = false);
     }
   }
-  /* Ball leads. */
+  /* Pins. */
   color (LEADS)
   {
     for (i = [1 : number_of_rows])
