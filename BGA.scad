@@ -1,7 +1,7 @@
 /*!
  * \file BGA.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a SMT Ball Gate Array package
  * (\c BGA).
@@ -26,6 +26,8 @@
 
 include <COLORS.scad>
 include <CONST.scad>
+
+COLOR_BGA_BODY = [0.2, 0.2, 0.2];
 
 /* For the BGA1284C100P36X36_3750X3750X400 example uncomment the following line.
  * The generation af vertices for all balls my take some time and memory.
@@ -57,7 +59,7 @@ module BGA
 )
 {
   /* Body. */
-  color (BGA_BODY)
+  color (COLOR_BGA_BODY)
   {
     translate ([(-package_body_length / 2), (-package_body_width / 2), ball_diameter])
     {
