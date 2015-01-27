@@ -1,7 +1,7 @@
 /*!
  * \file CAPC.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a SMT Chip Capacitor package
  * (\c CAPC).
@@ -27,8 +27,14 @@
 include <COLORS.scad>
 include <CONST.scad>
 
-// For the CAPC3216X175 example uncomment the following line
+// For the CAPC3216X175 example uncomment the following line.
 //CAPC (3.4, 1.75, 1.75, 0.8);
+
+// For looking up the default package uncomment the following line.
+//CAPC_LOOKUP();
+
+// For placing a package on a board uncomment the following line.
+//CAPC_PLACE("CAPC0603X33N", 0.5, 0.5, 90, "top", "");
 
 module CAPC
 (
@@ -69,35 +75,35 @@ module CAPC
   }
 }
 
-module CAPC_LOOKUP (modelname)
+module CAPC_LOOKUP (modelname = "CAPC3216M")
 {
-  if (modelname = "CAPC0603X33N")
+  if (modelname == "CAPC0603X33N")
   {
     CAPC (0.63, 0.30, 0.33, 0.20);
   }
-  else if (modelname = "CAPC0816X61N")
+  else if (modelname == "CAPC0816X61N")
   {
     CAPC (0.96, 1.75, 0.61, 0.38);
   }
-  else if (modelname = "CAPC1005X55N")
+  else if (modelname == "CAPC1005X55N")
   {
     CAPC (1.05, 0.55, 0.55, 0.30);
   }
-  else if (modelname = "CAPC1005X56N")
+  else if (modelname == "CAPC1005X56N")
   {
     CAPC (1.10, 0.60, 0.56, 0.25);
   }
-  else if (modelname = "CAPC1005X60N")
+  else if (modelname == "CAPC1005X60N")
   {
     CAPC (1.10, 0.60, 0.60, 0.25);
   }
-  else if (modelname = "CAPC3216X175N")
+  else if (modelname == "CAPC3216X175N")
   {
     CAPC (3.40, 1.80, 1.75, 0.75);
   }
-  else if ((modelname = "CAPC3216L")
-        || (modelname = "CAPC3216M")
-        || (modelname = "CAPC3216N"))
+  else if ((modelname == "CAPC3216L")
+        || (modelname == "CAPC3216M")
+        || (modelname == "CAPC3216N"))
   {
     CAPC (3.4, 1.80, 1.75, 0.75);
   }
@@ -114,7 +120,7 @@ module CAPC_PLACE
   value
 )
 {
-  if (side = "top")
+  if (side == "top")
   {
     translate ([Tx, Ty, top])
     {
@@ -124,7 +130,7 @@ module CAPC_PLACE
       }
     }
   }
-  if (side = "bottom")
+  if (side == "bottom")
   {
     translate ([Tx, Ty, bottom])
     {
