@@ -27,6 +27,8 @@
 include <COLORS.scad>
 include <CONST.scad>
 
+COLOR_CAPC_BODY = [0.99, 0.99, 0.5];
+
 // For the CAPC3216X175 example uncomment the following line.
 //CAPC (3.4, 1.75, 1.75, 0.8);
 
@@ -52,7 +54,7 @@ module CAPC
   union()
   {
     /* Body. */
-    color (CAPC_BODY)
+    color (COLOR_CAPC_BODY)
     {
       cube([(package_length - (2 * lead_length)), package_width, package_height], center = true);
     }
