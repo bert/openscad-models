@@ -59,7 +59,6 @@ RES_GOLD = [0.88, 0.78, 0.5]; /* Color needs further tweaking. */
 RES_SILVER = [0.65, 0.67, 0.72]; /* Color needs further tweaking. */
 
 /* Colors of board materials. */
-FR4 = [0.7, 0.67, 0.6, 0.95];
 DRILL_HOLE = [1.0, 1.0, 1.0];
 COPPER = [0.88, 0.78, 0.5]; /* Color needs further tweaking. */
 HASL = [0.77, 0.77, 0.8]; /* Color needs further tweaking. */
@@ -71,8 +70,6 @@ SILK_WHITE = [255/255, 255/255, 255/255];
 /* Colors of components, or parts thereof. */
 LEADS = [0.77, 0.77, 0.8];
 CAPA_BODY = [0.0, 0.0, 1.0];
-RES_BODY = [0.3, 0.3, 0.3];
-RESC_BODY = [0.3, 0.3, 0.3];
 
 /* Miscellaneous colors which might be useful. */
 OAK = [0.65, 0.5, 0.4];
