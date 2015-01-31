@@ -28,6 +28,7 @@ include <COLORS.scad>
 include <CONST.scad>
 
 COLOR_BGA_BODY = [0.2, 0.2, 0.2];
+COLOR_BGA_LEADS = [0.77, 0.77, 0.8];
 
 /* For the BGA1284C100P36X36_3750X3750X400 example uncomment the following line.
  * The generation af vertices for all balls my take some time and memory.
@@ -67,7 +68,7 @@ module BGA
     }
   }
   /* Ball leads. */
-  color (LEADS)
+  color (COLOR_BGA_LEADS)
   {
     for (i = [1 : number_of_rows])
     {
