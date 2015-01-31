@@ -1,7 +1,7 @@
 /*!
  * \file RESC.scad
  * 
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a SMT Chip Resistor package
  * (\c RESC).
@@ -27,6 +27,10 @@
 include <COLORS.scad>
 include <CONST.scad>
 
+COLOR_RESC_BODY = [0.3, 0.3, 0.3];
+COLOR_RESC_LEADS = [0.77, 0.77, 0.8];
+
+
 // For the RESC3216X140 example uncomment the following line
 //RESC (3.4, 1.75, 1.40, 0.8);
 
@@ -46,14 +50,14 @@ module RESC
         union()
         {
 // Body
-                color (RESC_BODY)
+                color (COLOR_RESC_BODY)
                 cube([(package_length - (2 * lead_length)), package_width, package_height], center = true);
 // Right lead
-                color (LEADS)
+                color (COLOR_RESC_LEADS)
                 translate([(0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
 // Left lead.
-                color (LEADS)
+                color (COLOR_RESC_LEADS)
                 translate([(-0.5 * (package_length - lead_length)), 0, 0])
                         cube([lead_length, package_width, package_height], center = true);
         }
