@@ -28,6 +28,7 @@ include <COLORS.scad>
 include <CONST.scad>
 
 COLOR_CAPPR_BODY = [0.2, 0.2, 0.2];
+COLOR_CAPPR_LEADS = [0.77, 0.77, 0.8];
 
 // For an example uncomment the following line
 //CAPPR (5.08, 11.0, 16.00, 0.8, 2.1);
@@ -54,7 +55,7 @@ module CAPPR
       cylinder (r = package_diameter / 2, h = package_height, center = false);
     }
     /* Left lead. */
-    color (LEADS)
+    color (COLOR_CAPPR_LEADS)
     {
       translate ([(-pitch_x / 2), 0, -lead_length])
       {
@@ -62,7 +63,7 @@ module CAPPR
       }
     }
     /* Right lead. */
-    color (LEADS)
+    color (COLOR_CAPPR_LEADS)
     {
       translate ([(pitch_x / 2), 0, -lead_length])
       {
