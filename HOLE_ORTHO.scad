@@ -1,7 +1,7 @@
 /*!
  * \file HOLE_ORTHO.scad
  *
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief Functions for a hole (orthogonal coordinates).
  *
@@ -24,9 +24,9 @@
  * <hr>
  */
 
-
 include <COLORS.scad>
 
+COLOR_HOLE = [1.0, 1.0, 1.0];
 
 module HOLE_ORTHO
 (
@@ -40,9 +40,12 @@ module HOLE_ORTHO
     /*!< Depth of the hole. */
 )
 {
-  translate([x, y, 0])
+  color (COLOR_HOLE)
   {
-    cylinder(r = (diameter / 2), h = depth, center = false);
+    translate([x, y, 0])
+    {
+      cylinder(r = (diameter / 2), h = depth, center = false);
+    }
   }
 }
 
