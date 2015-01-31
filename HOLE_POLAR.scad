@@ -1,7 +1,7 @@
 /*!
  * \file HOLE_POLAR.scad
  *
- * \author Copyright (C) 2010 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief Functions for a hole (polar coordinates).
  *
@@ -24,6 +24,10 @@
  * <hr>
  */
 
+include <COLORS.scad>
+
+COLOR_HOLE = [1.0, 1.0, 1.0];
+
 module HOLE_POLAR
 (
   distance,
@@ -36,11 +40,14 @@ module HOLE_POLAR
     /*!< Depth of the hole. */
 )
 {
-  rotate (a = rotation, v = [1, 0, 0])
+  color (COLOR_HOLE)
   {
-    translate ([0, distance, 0])
+    rotate (a = rotation, v = [1, 0, 0])
     {
-      cylinder (r = (diameter / 2), h = depth, center = false);
+      translate ([0, distance, 0])
+      {
+        cylinder (r = (diameter / 2), h = depth, center = false);
+      }
     }
   }
 }
