@@ -1,7 +1,7 @@
 /*!
  * \file RES.scad
  * 
- * \author Copyright (C) 2010, 2013 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a Through Hole Resistor
  * package (\c RES).
@@ -27,6 +27,9 @@
 include <COLORS.scad>
 include <CONST.scad>
 
+COLOR_RES_BODY = [0.3, 0.3, 0.3];
+COLOR_RES_LEADS = [0.77, 0.77, 0.8];
+
 // For a 1000 Ohm RES1016-635X229 example uncomment the following line:
 //RES (1000, 10.16, 6.35, 2.29, 0.8);
 
@@ -49,7 +52,7 @@ module RES
   union()
   {
     /* Body. */
-    color (RES_BODY)
+    color (COLOR_RES_BODY)
     {
       translate ([0, 0, (package_diameter / 2)])
       {
@@ -65,7 +68,7 @@ module RES
       }
     }
     /* Right lead. */
-    color (LEADS)
+    color (COLOR_RES_LEADS)
     {
       translate ([(-0.5 * (pitch_x - 2 * bend_radius)), 0, (package_diameter / 2)])
       {
@@ -81,7 +84,7 @@ module RES
       }
     }
     /* Right lead bend. */
-    color (RES_RED)
+    color (COLOR_RES_LEADS)
     {
       translate ([0, 0, 0])
       {
