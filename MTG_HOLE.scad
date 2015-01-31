@@ -1,7 +1,7 @@
 /*!
  * \file MTG_HOLE.scad
  *
- * \author Copyright (C) 2010, 2011 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
  *
  * \brief Functions for a mounting hole (unplated).
  *
@@ -28,6 +28,8 @@
 
 include <COLORS.scad>
 
+COLOR_HOLE = [1.0, 1.0, 1.0];
+
 module MTG_HOLE
 (
   x,
@@ -42,8 +44,10 @@ module MTG_HOLE
 {
   translate([x, y, 0])
   {
-    color (DRILL_HOLE)
-    cylinder(r = (diameter / 2), h = depth, center = false);
+    color (COLOR_HOLE)
+    {
+      cylinder(r = (diameter / 2), h = depth, center = false);
+    }
   }
 }
 
