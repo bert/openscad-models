@@ -28,6 +28,7 @@ include <COLORS.scad>
 include <CONST.scad>
 
 COLOR_PGA_BODY = [0.2, 0.2, 0.2];
+COLOR_PGA_LEADS = [0.77, 0.77, 0.8];
 
 /* For the PGA1284C100P36X36_3750X3750X400 example uncomment the following line.
  * The generation af vertices for all pins my take some time and memory.
@@ -69,7 +70,7 @@ module PGA
     }
   }
   /* Pins. */
-  color (LEADS)
+  color (COLOR_PGA_LEADS)
   {
     for (i = [1 : number_of_rows])
     {
