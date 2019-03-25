@@ -1,7 +1,7 @@
 /*!
  * \file CAPC.scad
  * 
- * \author Copyright (C) 2010 ... 2015 by Bert Timmerman <bert.timmerman@xs4all.nl>
+ * \author Copyright (C) 2010 ... 2015, 2019 by Bert Timmerman <bert.timmerman@xs4all.nl>
  * 
  * \brief Function to create a 3D model of a SMT Chip Capacitor package
  * (\c CAPC).
