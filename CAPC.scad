@@ -30,14 +30,14 @@ include <CONST.scad>
 COLOR_CAPC_BODY = [0.99, 0.99, 0.5];
 COLOR_CAPC_LEADS = [0.77, 0.77, 0.8];
 
-// For the CAPC3216X175 example uncomment the following line.
-//CAPC (3.4, 1.75, 1.75, 0.8);
+// For the CAPC320X160X175 example uncomment the following line.
+//CAPC (3.2, 1.60, 1.75, 0.8);
 
 // For looking up the default package uncomment the following line.
 //CAPC_LOOKUP();
 
 // For placing a package on a board uncomment the following line.
-//CAPC_PLACE("CAPC0603X33N", 0.5, 0.5, 90, "top", "");
+//CAPC_PLACE("CAPC320X160X175", 0.5, 0.5, 90, "top", "");
 
 module CAPC
 (
@@ -100,9 +100,9 @@ module CAPC_LOOKUP (modelname = "CAPC3216M")
   {
     CAPC (1.10, 0.60, 0.60, 0.25);
   }
-  else if (modelname == "CAPC3216X175N")
+  else if (modelname == "CAPC320X160X175")
   {
-    CAPC (3.40, 1.80, 1.75, 0.75);
+    CAPC (3.20, 1.60, 1.75, 0.75);
   }
   else if ((modelname == "CAPC3216L")
         || (modelname == "CAPC3216M")
